@@ -1,0 +1,17 @@
+{
+  "name": "kakshya-demo",
+  "private": true,
+  "type": "module",
+  "description": "A fake course-review app used to record the hero video for mukhxadnahunna.com.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "no-nepali-profanity": "file:../js"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  }
+}

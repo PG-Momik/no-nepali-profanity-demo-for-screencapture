@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>no-nepali-profanity demos</title>
+    <style>
+      :root {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
+        color: #1d1d1f;
+        background: #f5f5f7;
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 72px 24px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 32px;
+        letter-spacing: -0.025em;
+      }
+      .sub {
+        margin: 8px 0 32px;
+        color: #6e6e73;
+      }
+      .demos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .demo {
+        padding: 24px;
+        border-radius: 12px;
+        background: #fff;
+      }
+      .demo h2 {
+        margin: 0;
+        font-size: 19px;
+        letter-spacing: -0.015em;
+      }
+      .demo p {
+        margin: 8px 0 20px;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #6e6e73;
+      }
+      .demo a {
+        display: inline-block;
+        margin-right: 16px;
+        font-size: 15px;
+        color: #003893;
+        text-decoration: none;
+      }
+      .demo a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 640px) {
+        .demos {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>no-nepali-profanity demos</h1>
+    <p class="sub">Two fake apps using the real package, for recording the hero video.</p>
+    <div class="demos">
+      <section class="demo">
+        <h2>Kakshya · course reviews</h2>
+        <p>A learning platform's review form. Profanity is underlined as you type, and the review is blocked until it's fixed.</p>
+        <a href="/lms/?autoplay&clean">Play scripted demo ›</a>
+        <a href="/lms/">Try it yourself ›</a>
+      </section>
+      <section class="demo">
+        <h2>Guff · threaded replies</h2>
+        <p>A discussion thread where you reply to a reply. The reply still posts, with the profanity masked.</p>
+        <a href="/thread/?autoplay&clean">Play scripted demo ›</a>
+        <a href="/thread/">Try it yourself ›</a>
+      </section>
+    </div>
+  </body>
+</html>

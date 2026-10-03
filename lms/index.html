@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS101 Data Structures · Reviews · Kakshya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500&display=swap"
+    />
+  </head>
+  <body data-fake-url="nakkali-url.com.np/courses/cs101/reviews">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#" aria-label="Kakshya home">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span>Kakshya</span>
+        </a>
+        <nav class="topnav" aria-label="Main">
+          <a href="#">Courses</a>
+          <a href="#" class="is-active">Reviews</a>
+          <a href="#">Schedule</a>
+        </nav>
+        <span class="avatar" aria-label="Signed in as Demo User">DU</span>
+      </div>
+    </header>
+
+    <main class="page">
+      <aside class="course">
+        <p class="course-code">CS101</p>
+        <h1 class="course-title">Data Structures</h1>
+        <p class="course-meta">Momik Shrestha · Spring 2026</p>
+
+        <div class="score">
+          <p class="score-value">4.6</p>
+          <div>
+            <p class="score-stars" aria-hidden="true">★★★★★</p>
+            <p class="score-count">128 reviews</p>
+          </div>
+        </div>
+
+        <ul class="bars" aria-label="Rating breakdown">
+          <li><span>5</span><i style="--w: 74%"></i></li>
+          <li><span>4</span><i style="--w: 18%"></i></li>
+          <li><span>3</span><i style="--w: 5%"></i></li>
+          <li><span>2</span><i style="--w: 2%"></i></li>
+          <li><span>1</span><i style="--w: 1%"></i></li>
+        </ul>
+      </aside>
+
+      <section class="content">
+        <form class="compose" id="compose" novalidate>
+          <div class="compose-head">
+            <h2>Write a review</h2>
+            <div class="stars" id="stars" role="radiogroup" aria-label="Rating">
+              <button type="button" role="radio" aria-checked="false" aria-label="1 star" data-value="1">★</button>
+              <button type="button" role="radio" aria-checked="false" aria-label="2 stars" data-value="2">★</button>
+              <button type="button" role="radio" aria-checked="false" aria-label="3 stars" data-value="3">★</button>
+              <button type="button" role="radio" aria-checked="false" aria-label="4 stars" data-value="4">★</button>
+              <button type="button" role="radio" aria-checked="false" aria-label="5 stars" data-value="5">★</button>
+            </div>
+          </div>
+
+          <label class="field-label" for="review">Your review</label>
+          <div class="field" id="field">
+            <div class="field-backdrop" id="backdrop" aria-hidden="true"><div id="highlights"></div></div>
+            <textarea
+              id="review"
+              name="review"
+              rows="4"
+              maxlength="500"
+              spellcheck="false"
+              placeholder="What was the course like? Be honest, and keep it respectful."
+              aria-describedby="review-error"
+            ></textarea>
+          </div>
+
+          <div class="compose-foot">
+            <p class="error" id="review-error" role="alert"></p>
+            <span class="counter" id="counter">0 / 500</span>
+          </div>
+
+          <div class="compose-actions">
+            <p class="compose-note">Reviews are checked by <strong>no-nepali-profanity</strong> before posting.</p>
+            <button class="btn-primary post" id="post" type="submit">
+              <span class="btn-label">Post review</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </div>
+        </form>
+
+        <h3 class="list-title">Recent reviews</h3>
+        <ul class="reviews" id="reviews">
+          <li class="review">
+            <span class="person" style="--hue: 212">RT</span>
+            <div>
+              <p class="review-head"><strong>Randip Thapa</strong><span>2 days ago</span></p>
+              <p class="review-stars" aria-label="5 stars">★★★★★</p>
+              <p class="review-body">Clear explanations of trees and graphs. Assignments are tough but fair.</p>
+            </div>
+          </li>
+          <li class="review">
+            <span class="person" style="--hue: 152">AG</span>
+            <div>
+              <p class="review-head"><strong>Asha Gurung</strong><span>1 week ago</span></p>
+              <p class="review-stars" aria-label="4 stars">★★★★<span class="dim">★</span></p>
+              <p class="review-body">Labs could be longer, but Sir ekdam helpful hunuhunchha.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" /><path d="m6 10.5 2.7 2.7L14.5 7.5" /></svg>
+      <span data-message>Review posted</span>
+    </div>
+
+    <!-- The fake cursor used by the scripted demo -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M4 2.5v16.2l4.3-4.1 2.8 6.6 3-1.3-2.8-6.5h5.9z" /></svg>
+    </div>
+
+    <p class="hint" id="hint">Press <kbd>P</kbd> to play the scripted demo · <kbd>R</kbd> to reset</p>
+
+    <script type="module" src="/src/lms/main.ts"></script>
+  </body>
+</html>
